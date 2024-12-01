@@ -1,7 +1,7 @@
-from reviews import app, db
+from website import app, db
 from flask import render_template, request, url_for, redirect, flash
 from sqlalchemy import text
-from reviews import functionalities as fu
+from website import functionalities as fu
 from datetime import timedelta
 import re
 

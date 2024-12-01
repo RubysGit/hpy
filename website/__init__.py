@@ -9,4 +9,4 @@ app.config['SECRET_KEY'] ='abcabcabcabcabc'
 
 db = SQLAlchemy(app)
 
-from reviews import routes
+from website import routes

@@ -1,7 +1,7 @@
 from hashlib import sha256
 from datetime import datetime
 from sqlalchemy import text
-from reviews import db
+from website import db
 
 def create_cookie_session(id: int): # create cookie and save it
     print("creating cookie session")
