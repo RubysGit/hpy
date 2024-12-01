@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+{% include 'message.html' %}
+<body class="text-center">
+<div class="container">
+<form method="POST" class="form-register" action="/login">
+    <br>
+    <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+    <br>
+
+    <label for="Username" class="form-label">Username</label>
+    <input type="text" id="Username" name="Username" class="form-control" placeholder="enter username">
+    <label for="Password" class="form-label">Password</label>
+    <input type="password" id="Password" name="Password" class="form-control" placeholder="enter password">
+
+    <br>
+    <button type="submit" class="btn btn-dark">Login</button>
+
+</form>
+</div>
+
+</body>
+{% endblock %}

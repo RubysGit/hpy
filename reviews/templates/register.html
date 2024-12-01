@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+Register
+{% endblock %}
+
+{% block content %}
+{% include 'message.html' %}
+<body class="text-center">
+<div class="container">
+<form method="POST" class="form-register" action="/register">
+    <br>
+    <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+    <br>
+
+    <label for="EMail" class="form-label">E-Mail</label>
+    <input type="text" id="EMail" name="EMail" class="form-control" placeholder="enter email (max len=50, needs valid format)">
+    <label for="Username" class="form-label">Username</label>
+    <input type="text" id="Username" name="Username" class="form-control" placeholder="enter username (max len=50)">
+    <label for="Password" class="form-label">Password</label>
+    <input type="password" id="Password" name="Password" class="form-control" placeholder="enter password (max len=50)">
+    <label for="favcountry" class="form-label">Favourite country</label>
+    <input type="text" id="favcountry" name="favcountry" class="form-control" placeholder="enter favourite country (max len=50)">
+
+    <br>
+    <button type="submit" class="btn btn-dark">Register</button>
+
+</form>
+</div>
+
+</body>
+{% endblock %}
